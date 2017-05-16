@@ -1,0 +1,22 @@
+{
+  "name": "comparador",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "@ull-andrea-carlos/comparar": "^1.0.4",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "jsonfile": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "act": "npm install --save @ull-andrea-carlos/comparar"
+  },
+  "author": "",
+  "license": "ISC"
+}
