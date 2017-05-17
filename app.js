@@ -26,7 +26,7 @@ var auth = function(req, res, next) {
   if (req.session && req.session.user in users)
     return next();
   else
-    return res.sendStatus(401);
+    return res.render('formulario/noautentificado');
 };
 
 app.set('views', path.join(__dirname, 'views'));
@@ -58,7 +58,7 @@ app.get('/registrar', function(req, res){
   res.render('formulario/registrar')
 })
 
-app.get('/comparar', function(req, res){
+app.get('/comparar',auth, function(req, res){
   res.render('content/input', { result: ''})
 })
 
@@ -107,10 +107,6 @@ app.post('/login', function(req, res){
     res.render('formulario/noautentificado' );
   });
 
-  app.get('/content',auth, function(req, res){
-    res.render('perfil/perfil', { nombre: req.session.user })
-  })
-//app.use('/content',auth, express.static(path.join(__dirname, 'public')));
 
   var server = app.listen(process.env.PORT || 8087, ()=> {
 	var host = server.address().address
