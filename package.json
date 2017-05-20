@@ -10,7 +10,8 @@
     "ejs": "^2.5.6",
     "express": "^4.15.2",
     "express-session": "^1.15.2",
-    "jsonfile": "^3.0.0"
+    "jsonfile": "^3.0.0",
+    "mongoose": "^4.10.0"
   },
   "devDependencies": {},
   "scripts": {
