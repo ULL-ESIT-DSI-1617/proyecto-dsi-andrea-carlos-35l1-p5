@@ -1,28 +1,65 @@
-th, td      {
-               vertical-align: top;
-               text-align: right;
-               font-size:large;
-            }  
-#converted  { color: red; font-weight: bold; font-size:large;          }     /* Calculated values in bold */
-input       {
-              text-align: right;       /* Align input to the right  */
-              border: none;
-              border-radius: 20px 20px 20px 20px;
-              padding: 5px  5px;
-              font-size:large;       }
-body
-{
- background-color:#b0c4de;  /* blue */
- font-size:large;
- font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+* {
+  margin:0;
+  padding:0;
+  border:0;
+  font-family:'Open Sans',sans-serif;
 }
 
-h1 {
-    font-weight: normal;
-    font-family: "Brush Script MT", cursive;
-    background: #3C5681;
-    padding: 5px 15px;
-    color: white;
-    display:inline-block;
-    border-radius: 10px 10px 10px 10px;
+#original{
+  text-align: center;
+}
+
+body {
+  background-color:rgb(161, 228, 217);
+}
+
+#form{
+  width: auto;
+  margin:25px 0px;
+  padding: 0 30px;
+}
+
+#base{
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  background-color: #73BAD6;
+  width:600px;
+  height:350px;
+  margin:auto;
+  position: absolute;
+  top:0;  bottom:0;  left:0;  right:0;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+}
+
+#dentro {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#titulo{
+  position: relative;
+  top: -13px;
+  text-align:center;
+  /*font-size:35px;*/
+  height:50px;
+  margin-bottom:15px;
+  color:rgba(82, 179, 163, 0.8);
+  background-color:#EBEBEB;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+}
+
+div {
+  text-align:center;
+}
+
+#converted {
+  background-color: #1C78AA;
 }

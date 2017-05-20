@@ -7,18 +7,33 @@
      <link href="./views/content/global.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1>Comparador de Secuencias</h1>
-    <table>
-      <tr>
-        <th>Introducir: Primos(n), Fibonacci(n), Primos(n) diferencia/igual Fibonacci(n)</th>
-        <form method="post" action="/comparar">
-          <td><input id="original" name="temp" placeholder="32F" size="50"></td>
-        </form>
-      </tr>
-      <tr>
-        <th>Resultado: </th>
-        <td><span class="output" name="result" id="converted"><%- result %></span></td>
-      </tr>
-    </table>
+  
+    <div id="base">
+    
+      <div id="titulo"><h1>Comparador de Secuencias</h1></div>
+
+      <table>
+        <div id="dentro">
+          
+          <div>
+              <h3>Introducir: Primos(n), Fibonacci(n), Primos(n) diferencia/igual Fibonacci(n)</h3>
+              <form method="post" action="/comparar">
+              <br>
+              <input id="original" name="temp" placeholder="Primos(5) igual Fibonacci(8)" size="50">
+              </form>
+          </div>
+
+          <div>
+              <br>
+              <h4>Resultado: </h4>
+              <br>
+              <h3><span class="output" name="result" id="converted"><%- result %></span></h3>
+          </div>
+
+        </div>
+      </table>
+      
+    </div>
+
   </body>
 </html>
