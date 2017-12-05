@@ -65,6 +65,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use(express.static(__dirname + '/'));
+
 //En la raiz pone las opciones para login y acceder contenido (no deberia poder acceder al no estar autentificado)
 app.get('/', function(req, res){
   res.render('formulario/noautentificado');
@@ -179,14 +180,14 @@ app.post('/comparar', function(req, res){
 })
 
 
-  //Borra la sesion.
-  app.get('/logout', function (req, res) {
-    req.session.destroy();
-    res.render('formulario/noautentificado' );
-  });
+//Borra la sesion.
+app.get('/logout', function (req, res) {
+  req.session.destroy();
+  res.render('formulario/noautentificado' );
+});
 
 
-  var server = app.listen(process.env.PORT || 8087, ()=> {
+var server = app.listen(process.env.PORT || 8087, ()=> {
 	var host = server.address().address
 	var port = server.address().port
 
